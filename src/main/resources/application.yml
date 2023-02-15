@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  elasticsearch:
+    uris: hadoop113:9200
+# database - hbase
+hbase:
+  zookeeper:
+    quorum: hadoop111,hadoop112,hadoop113
+    property:
+      clientPort: 2181
+zookeeper:
+  znode:
+    parent: /hbase
